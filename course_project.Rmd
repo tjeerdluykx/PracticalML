@@ -138,7 +138,6 @@ for (i in 1:length(testing)) {
     }      
 }
 
-
 testing <- rbind(Training[2, -58], testing)
 ```
 
@@ -154,6 +153,8 @@ predictionsB1 <- predict(modFitB1,Testing, type = "class")
 
 confusionMatrix(predictionsB1,Testing$classe)
 ```
+
+Accuracy of the Random Fores algorithm is really close to 1, which is good for model prediction. The out of sample of error is therefore close to 0.01%. 
 
 ## 4. File Creation for Project Submission
 
